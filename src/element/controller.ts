@@ -22,7 +22,7 @@ mongoose.set('debug', true);
 
 /*POST CONTROLLER DOWNLOAD XML*/
 let xmldownload = function(req: Request, res: Response): void {
-   let xml = js2xmlparser.parse("name", req.body);
+   let xml = js2xmlparser.parse("input", req.body);
 
    fs.writeFile('test.xml', xml, (err) => {
        if (err) throw err;

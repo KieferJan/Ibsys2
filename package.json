@@ -54,6 +54,7 @@
     "tslint": "3.6.0",
     "typescript": "^2.2.2",
     "typings": "^0.7.9",
-    "yargs": "4.6.0"
+    "yargs": "4.6.0",
+    "js2xmlparser": "^3.0.0"
   }
 }

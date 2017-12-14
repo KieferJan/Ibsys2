@@ -30,24 +30,8 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 //To use functionality from the controller
 const controller = require('./controller');
 
+///////
+app.post('/generate', controller.xmlDownload);
 
-
-/* POST service*/
-app.post('/element/:id', controller.createElement);
-
-/* Put element service */
-app.put('/element/:id', controller.updateElement);
-
-/*GET Element service*/
-app.get('/element/:id', controller.getElement);
-
-/* GET all Element service*/
-app.get('/element', controller.getAllElements);
-
-/* POST Search Service */
-app.post('/search', controller.getSearch);
-
-/* POST PDF Export Service*/
-app.post('/export', controller.getPDFExport);
 
 export = server;

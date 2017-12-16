@@ -36,9 +36,6 @@ app.post('/generate', controller.xmlDownload);
 /* POST service*/
 app.post('/element/:id', controller.createElement);
 
-/* Put element service */
-app.put('/element/:id', controller.updateElement);
-
 /*GET Element service*/
 app.get('/element/:id', controller.getElement);
 
